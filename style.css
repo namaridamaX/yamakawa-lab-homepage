@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  display: flex;
+  background-color: #d8eefe;
+  height: 80px;
+  align-items: center;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+#school-name {
+  font-weight: bold;
+  color: #094067;
+  font-size: large;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#lab-name {
+  font-weight: bold;
+  color: #094067;
+  text-align: center;
+  font-size: x-large;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(rgba(217, 226, 230, 0.589), rgba(0, 0, 0, 0.6)),url("img/IMG_6824.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+  #menu{
+    margin: 0;
+    padding: 0;
+  }
+
+    #menu li {
+      list-style: none;
+      display: inline-block;
+      width: 10%;
+      min-width: 200px;
+    }
+
+    #menu li:not(:last-child) {
+      border-right: 2px solid #094067;
+    }
+
+      #menu li a {
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      #menu li a.current {
+        color: #094067;
+        border-bottom: 2px solid #094067;
+      }
+
+      #menu li a:hover {
+        color: #094067;
+      }
