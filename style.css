@@ -40,36 +40,40 @@ body {
 
 nav {
   position: absolute;
-  right: 0;
+  right: 50px;
   text-align: center;
 }
 
   #menu{
     margin: 0;
     padding: 0;
+    display: table;
+    margin : 0 auto;
+    padding: 0;
+    width: 80%;
+    text-align: center;
   }
 
     #menu li {
       list-style: none;
-      display: inline-block;
-      width: 10%;
-      min-width: 200px;
-    }
-
-    #menu li:not(:last-child) {
-      border-right: 2px solid #094067;
+      display: table-cell;
+      min-width: 150px;
     }
 
       #menu li a {
         font-weight: bold;
+        display: block;
         text-decoration: none;
+        width: 100%;
+        color: #094067;
+        padding-bottom: 5px;
       }
 
-      #menu li a.current {
-        color: #094067;
-        border-bottom: 2px solid #094067;
+      #menu li.current {
+        border-bottom: 3px solid #094067;
       }
 
-      #menu li a:hover {
+      #menu li:hover {
         color: #094067;
+        border-bottom: 3px solid #094067;
       }
