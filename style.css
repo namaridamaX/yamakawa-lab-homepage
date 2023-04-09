@@ -6,8 +6,11 @@
 #header {
   display: flex;
   background-color: #d8eefe;
-  height: 80px;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 img {
@@ -77,3 +80,43 @@ nav {
         color: #094067;
         border-bottom: 3px solid #094067;
       }
+
+/* ここからbodyのスタイル */
+
+/* WellComeの部分 */
+#greeting-box {
+  width: 60%;
+  margin: 10% auto;
+}
+#greeting-title {
+  border-bottom: 1px solid;
+  color: #becbd5;
+  margin-bottom: 5%;
+}
+#greeting-box h1 {
+  text-align: center;
+  color: #d8eefe;
+  font-weight: bold;
+  font-size: 60px;
+}
+#greeting-box p {
+  color: #d8eefe;
+  font-size: 40px;
+}
+
+/* おしらせの部分 */
+#news-box {
+  width: 60%;
+  margin: 10% auto;
+}
+#news-title {
+  border-bottom: 1px solid;
+  color: #becbd5;
+  margin-bottom: 5%;
+}
+#news-box h1 {
+  text-align: center;
+  color: #d8eefe;
+  font-weight: bold;
+  font-size: 60px;
+}
