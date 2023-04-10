@@ -119,7 +119,7 @@ body {
 /* 研究室紹介の部分 */ 
 #introduce-box {
   width: 60%;
-  margin: 20% auto;
+  margin: 10% auto;
 }
 #introduce-title {
   border-bottom: 1px solid;
@@ -132,95 +132,31 @@ body {
   font-weight: bold;
   font-size: 60px;
 }
-/*==================================================
-スライダーのためのcss
-===================================*/
-.slider {
-  position:relative;
-}
-/*　背景画像設定　*/
 
-.slider-item {
-  width: 100%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
-  background-repeat: no-repeat;/*背景画像をリピートしない*/
-  background-position: center;/*背景画像の位置を中央に*/
-  background-size: cover;/*背景画像が.slider-item全体を覆い表示*/
-  background-color: #ccc;
-  opacity: 50%;
+/* スライダーのためのcss */
+.swiper--wrapper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  color: #175684;
+  width: 100%;
+  height: 100%;
   text-align: center;
-  padding: auto;
+  line-height: 300px;
 }
-
-/*矢印の設定*/
-
-/*戻る、次へ矢印の位置*/
-.slick-prev, 
-.slick-next {
-  position: absolute;/*絶対配置にする*/
-z-index: 3;
-  top: 42%;
-  cursor: pointer;/*マウスカーソルを指マークに*/
-  outline: none;/*クリックをしたら出てくる枠線を消す*/
-  border-top: 2px solid #ccc;/*矢印の色*/
-  border-right: 2px solid #ccc;/*矢印の色*/
-  height: 25px;
-  width: 25px;
+.swiper-slide:nth-child(3n + 1) {
+  background-color: #e6eff6;
+  opacity: 60%;
 }
-
-.slick-prev {/*戻る矢印の位置と形状*/
-  left:2.5%;
-  transform: rotate(-135deg);
+.swiper-slide:nth-child(3n + 2) {
+  background-color: #e6eff6;
+  opacity: 60%;
 }
-
-.slick-next {/*次へ矢印の位置と形状*/
-  right:2.5%;
-  transform: rotate(45deg);
+.swiper-slide:nth-child(3n + 3) {
+  background-color: #e6eff6;
+  opacity: 60%;
 }
-
-/*ドットナビゲーションの設定*/
-
-.slick-dots {
-position: relative;
-z-index: 3;
-text-align:center;
-}
-
-.slick-dots li {
-  display:inline-block;
-margin:0 5px;
-}
-
-.slick-dots button {
-  color: transparent;
-  outline: none;
-  width:8px;/*ドットボタンのサイズ*/
-  height:8px;/*ドットボタンのサイズ*/
-  display:block;
-  border-radius:50%;
-  background:#ccc;/*ドットボタンの色*/
-}
-
-.slick-dots .slick-active button{
-  background:#333;/*ドットボタンの現在地表示の色*/
-}
-
-/*========= レイアウトのためのCSS ===============*/
-#wrapper ul{
-margin:0;
-padding: 0;
-list-style: none;
-}
-
-a{
-color: #fff;
-}
-
-a:hover,
-a:active{
-text-decoration: none;
-}
-
-.wrapper{
-position: relative;
-margin-top: auto;
+.swiper-button-prev {
+  color: #071620;
 }
