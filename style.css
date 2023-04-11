@@ -112,9 +112,14 @@ body {
   font-weight: bold;
   font-size: 60px;
 }
-#news-box p {
+#news{
+  overflow: auto;
   color: #d8eefe;
-  font-size: 40px;
+  font-size: 20px;
+  height: 200px;
+}
+#news li{
+  margin-bottom: 10px;
 }
 
 /* 研究室紹介の部分 */ 
@@ -148,15 +153,15 @@ body {
 }
 .swiper-slide:nth-child(3n + 1) {
   background-color: #e6eff6;
-  opacity: 60%;
+  opacity: 80%;
 }
 .swiper-slide:nth-child(3n + 2) {
   background-color: #e6eff6;
-  opacity: 60%;
+  opacity: 80%;
 }
 .swiper-slide:nth-child(3n + 3) {
   background-color: #e6eff6;
-  opacity: 60%;
+  opacity: 80%;
 }
 .swiper-button-prev {
   color: #071620;
