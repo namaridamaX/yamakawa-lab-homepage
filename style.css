@@ -169,7 +169,6 @@ body {
 .swiper-slide p {
   font-size: 110%;
   margin: 0 20% 5%;
-  
 }
 .swiper-button-prev {
   color: #071620;
@@ -209,4 +208,21 @@ body {
 #member-list ul li{
   padding: 0.5em 0;
   margin: 0 2%;
+}
+
+/* 研究内容の部分 */
+#research-box {
+  width: 60%;
+  margin: 10% auto;
+}
+#research-title {
+  border-bottom: 1px solid;
+  color: #becbd5;
+  margin-bottom: 5%;
+}
+#research-box h1 {
+  text-align: center;
+  color: #d8eefe;
+  font-weight: bold;
+  font-size: 60px;
 }
