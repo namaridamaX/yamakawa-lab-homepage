@@ -19,6 +19,9 @@ img {
   width: 5%;
   height: 5%;
 }
+#school-name-box {
+  text-decoration: none;
+}
 #school-name {
   font-weight: bold;
   color: #094067;
@@ -225,4 +228,221 @@ body {
   color: #d8eefe;
   font-weight: bold;
   font-size: 60px;
+}
+
+/* スマホ版のcss */
+
+@media screen and (max-width: 480px) {
+  #header {
+    display: flex;
+    background-color: #d8eefe;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  img {
+    width: 15%;
+    height: 15%;
+  }
+  #school-name-box {
+    text-decoration: none;
+  }
+  #school-name {
+    font-weight: bold;
+    color: #094067;
+    font-size: 50%;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  #lab-name {
+    font-weight: bold;
+    color: #094067;
+    text-align: center;
+    font-size: 50%;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  nav {
+    position: absolute;
+    right: 8px;
+    text-align: center;
+  }
+    #menu{
+      margin: 0;
+      padding: 0;
+      display: table;
+      padding: 0;
+      width: 60%;
+      text-align: center;
+    }
+      #menu li {
+        list-style: none;
+        display: table-cell;
+        min-width: 60px;
+        font-size: 5px;
+        text-align: center;
+      }
+        #menu li a {
+          font-weight: bold;
+          display: block;
+          text-decoration: none;
+          width: 100%;
+          color: #094067;
+          padding-bottom: 5px;
+        }
+        #menu li.current {
+          width: 2px;
+          border-bottom: 1px solid #094067;
+        }
+        #menu li:hover {
+          color: #094067;
+          border-bottom: 1px solid #094067;
+        }
+  body {
+    background-image: linear-gradient(rgba(217, 226, 230, 0.589), rgba(0, 0, 0, 0.6)),url("img/IMG_6824.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+  }
+  /* WellComeの部分 */
+  #greeting-box {
+    width: 85%;  /* 変更点 */
+    margin: 10% auto;
+  }
+  #greeting-title {
+    border-bottom: 1px solid;
+    color: #becbd5;
+    margin-bottom: 5%;
+  }
+  #greeting-box h1 {
+    text-align: center;
+    color: #d8eefe;
+    font-weight: bold;
+    font-size: 40px; /* 変更点 */
+    margin-top: 80px; /* 変更点 */
+  }
+  #greeting-box p {
+    color: #175684;
+    font-size: 15px; /* 変更点 */
+    background-color: #fff;
+    opacity: 60%;
+    border-radius: 8px;
+    padding: 3%;
+    text-align: center;
+  }
+  /* おしらせの部分 */
+  #news-box {
+    width: 85%;
+    margin: 10% auto;
+  }
+  #news-title {
+    border-bottom: 1px solid;
+    color: #becbd5;
+    margin-bottom: 5%;
+  }
+  #news-box h1 {
+    text-align: center;
+    color: #d8eefe;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 80px;
+  }
+  #news{
+    overflow: auto;
+    color: #175684;
+    font-size: 15px;
+    height: 200px;
+    background-color: #fff;
+    opacity: 60%;
+    border-radius: 8px;
+  }
+  #news li{
+    margin-bottom: 10px;
+  }
+  /* 研究室紹介の部分 */ 
+  #introduce-box {
+    width: 85%;
+    margin: 10% auto;
+  }
+  #introduce-title {
+    border-bottom: 1px solid;
+    color: #becbd5;
+    margin-bottom: 5%;
+  }
+  #introduce-box h1 {
+    text-align: center;
+    color: #d8eefe;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 80px;
+  }
+
+  /* スライダーのためのcss */
+  .swiper--wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    color: #175684;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #e6eff6;
+    opacity: 60%;
+    border-radius: 8px; 
+  }
+  .swiper-slide h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 0;
+  }
+  .swiper-slide p {
+    font-size: 110%;
+    margin: 0 15% 15%;
+  }
+  .swiper-button-prev {
+    color: #071620;
+  }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+  display: none;
+  }
+  /* メンバー紹介の部分 */
+  #member-box {
+    width: 85%;
+    margin: 10% auto;
+  }
+  #member-title {
+    border-bottom: 1px solid;
+    color: #becbd5;
+    margin-bottom: 5%;
+  }
+  #member-box h1 {
+    text-align: center;
+    color: #d8eefe;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 80px;
+  }
+
+  #list-title{
+    color: #d8eefe;
+    font-weight: bold;
+  }
+  #member-list ul{
+    background: #dadada;/*灰色に*/
+    border-radius :8px;
+    opacity: 80%;
+    padding: 0.5em 0.5em 0.5em 2em;
+    margin-bottom: 5%;
+    color: #175684;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  #member-list ul li{
+    padding: 0.5em 0;
+    margin: 0 2%;
+  }
 }
