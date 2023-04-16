@@ -279,8 +279,8 @@ body {
       #menu li {
         list-style: none;
         display: table-cell;
-        min-width: 60px;
-        font-size: 5px;
+        min-width: 70px;
+        font-size: 11px;
         text-align: center;
       }
         #menu li a {
